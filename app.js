@@ -78,7 +78,7 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'HELP') {
-      message.channel.send('```css\nThe commands are:\n&help - This list\n&invite - Invite link\n&bot - Stop bot spam\n&dog - oUR dog\n&purge - Deletes messages\n&hook - Webhook commands```');
+      message.channel.send('```css\nThe commands are:\nhelp - This list\n&invite - Invite link\nbot - Stop bot spam\ndog - oUR dog\npurge - Deletes messages\nhook - Webhook commands```');
 
     }
 
@@ -86,8 +86,8 @@ bot.on('message', message => {
       async function purge() {
           message.delete();
 
-          if (!message.member.roles.find("name", "bot-overlord")) {
-            message.channel.send('You Need the \`bot-overlord\`role to use this command.');
+          if (!message.member.roles.find("name", "Housekeeping")) {
+            message.channel.send('You Need the \`Housekeeping\`role to use this command.');
             return;
           }
 
