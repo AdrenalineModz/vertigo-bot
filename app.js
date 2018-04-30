@@ -67,6 +67,11 @@ bot.on('message', message => {
 
     }
 
+    if (msg === prefix + 'HECK') {
+      message.channel.send('<:heckoff:429416312977096722>');
+
+    }
+
     if (msg === prefix + 'INVITE') {
       message.channel.send('Invite friends with this link: http://discord.gg/KMXPaw7');
 
@@ -78,7 +83,7 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'HELP') {
-      message.channel.send('```css\nThe commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\npurge - Deletes messages\nhook - Webhook commands```');
+      message.channel.send('```css\nThe commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\nhecc - heck off\npurge - Deletes messages\nhook - Webhook commands```');
 
     }
 
