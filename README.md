@@ -1,1 +1,2 @@
-# vertigo-bot
+# Vertigo
+Discord Bot
