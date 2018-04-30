@@ -78,7 +78,7 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'HELP') {
-      message.channel.send('```css\nThe commands are:\nhelp - This list\n&invite - Invite link\nbot - Stop bot spam\ndog - oUR dog\npurge - Deletes messages\nhook - Webhook commands```');
+      message.channel.send('```css\nThe commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\npurge - Deletes messages\nhook - Webhook commands```');
 
     }
 
