@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/WastefulNick/Vertigo/issues"
   },
-  "homepage": "https://github.com/WastefulNick/Vertigo#readme"
+  "homepage": "https://github.com/WastefulNick/Vertigo#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
 }
