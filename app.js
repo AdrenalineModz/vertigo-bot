@@ -73,7 +73,7 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'BOT') {
-      message.channel.send('Using extensive bot commands in general will result in a ban! Use \`#bots\`');
+      message.channel.send('Using extensive bot commands in general will result in a ban! Use #bots');
 
     }
 
