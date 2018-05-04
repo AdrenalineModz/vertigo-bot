@@ -88,7 +88,7 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'NINJA') {
-      message.channel.send('im a pervert and i should burn in hell for soliciting minors online and blackmailing them of 18+ photos.');
+      message.channel.send('im a pervert and i should burn in hell for soliciting minors online and blackmailing them of 18+ photos. here is my greekass face https://goo.gl/S9k7PJ');
 
     }
 
