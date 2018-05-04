@@ -93,7 +93,7 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'HELP') {
-      message.channel.send('The commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\ngit - Github link\nninja - TTNinjaGaming\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: ' + prefix);
+      message.channel.send('```The commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\ngit - Github link\nninja - TTNinjaGaming\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
 
     }
 
