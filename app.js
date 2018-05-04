@@ -77,8 +77,13 @@ bot.on('message', message => {
 
     }
 
+    if (msg === prefix + 'CONGO') {
+      message.channel.send('THE OFFICIAL SQUAD WEBSITE MADE BY WASTEFULNICK: http://congohub.cf');
+
+    }
+
     if (msg === prefix + 'HELP') {
-      message.channel.send('```css\nThe commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\npurge - Deletes messages\nhook - Webhook commands```');
+      message.channel.send('```css\nThe commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\npurge - Deletes messages\nhook - Webhook commands```');
 
     }
 
