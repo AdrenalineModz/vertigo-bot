@@ -142,6 +142,8 @@ bot.on('message', message => {
 bot.on('ready', () => {
   console.log('Bot online.')
 
+  bot.user.setGame('&help')
+
 })
 
 //Token
