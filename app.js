@@ -61,6 +61,7 @@ bot.on('message', message => {
     let sender = message.author;
     let cont = message.content.slice(prefix.length).split(" ");
     let args = cont.slice(1);
+    var mention = message.mention.users.first();
 
     if (msg === prefix + 'DOG') {
       message.channel.send('oUR dog <:angery:438006163955515392>');
@@ -96,6 +97,15 @@ bot.on('message', message => {
       message.channel.send('```The commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\ngit - Github link\nninja - TTNinjaGaming\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
 
     }
+
+    if (msg.startsWith(prefix + 'PM')) {
+      if (mention == null) { message.channel.send('You have to mention someone!'); return;}
+      message.delete();
+      mentionMessage = message.content.slice(prefix.length + 2);
+      mention.sendMessage (mentionMessage);
+      message.channel.send('Message sent!');  
+    }
+
 
     if (msg.startsWith(prefix + 'PURGE')) {
       async function purge() {
