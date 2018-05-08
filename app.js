@@ -102,8 +102,9 @@ bot.on('message', message => {
       if (mention == null) { message.channel.send('You have to mention someone!'); return;}
       message.delete();
       mentionMessage = message.content.slice(prefix.length + 2);
-      mention.sendMessage (mentionMessage + '\n\nSent by:' + sender);
+      mention.send (mentionMessage + '\n\nSent by:' + sender);
       message.channel.send('Message sent!');
+
     }
 
 
