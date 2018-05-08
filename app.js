@@ -94,7 +94,7 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'HELP') {
-      message.channel.send('```The commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\ngit - Github link\nninja - TTNinjaGaming\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
+      message.channel.send('```The commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\ngit - Github link\nninja - TTNinjaGaming\npm - PMs people\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
 
     }
 
@@ -102,8 +102,8 @@ bot.on('message', message => {
       if (mention == null) { message.channel.send('You have to mention someone!'); return;}
       message.delete();
       mentionMessage = message.content.slice(prefix.length + 2);
-      mention.sendMessage (mentionMessage);
-      message.channel.send('Message sent!');  
+      mention.sendMessage (mentionMessage + '\n\nSent by:' + sender);
+      message.channel.send('Message sent!');
     }
 
 
