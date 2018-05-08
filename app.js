@@ -94,7 +94,7 @@ bot.on('message', message => {
     }
 
     if (msg.includes('GAY')) {
-      message.channel.send('no u');
+      message.delete();
       
     }
 
