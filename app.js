@@ -61,7 +61,7 @@ bot.on('message', message => {
     let sender = message.author;
     let cont = message.content.slice(prefix.length).split(" ");
     let args = cont.slice(1);
-    var mention = message.mention.users.first();
+    var mention = message.mentions.users.first();
 
     if (msg === prefix + 'DOG') {
       message.channel.send('oUR dog <:angery:438006163955515392>');
