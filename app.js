@@ -93,7 +93,7 @@ bot.on('message', message => {
 
     }
 
-    if (msg.includes('GAY')) {
+    if (msg.sender == '@ProperlyGood#5508') {
       message.delete();
       
     }
