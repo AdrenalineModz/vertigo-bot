@@ -93,7 +93,7 @@ bot.on('message', message => {
 
     }
 
-    if (msg.sender == '@ProperlyGood#5508') {
+    if (msg.messageAuthor == @ProperlyGood#5508) {
       message.delete();
       
     }
