@@ -93,9 +93,9 @@ bot.on('message', message => {
 
     }
 
-    if (msg.messageAuthor == 'WastefulNick#9074') {
-      message.delete();
-      
+    if (msg.includes('GAY')) {
+      message.channel.send('no u');
+
     }
 
     if (msg === prefix + 'HELP') {
