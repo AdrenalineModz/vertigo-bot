@@ -152,6 +152,19 @@ bot.on('message', message => {
 
     }
 
+    if (msg.includes('<:rolf:431860374829006849>')) {
+      message.channel.send(('<:rolf:431860374829006849');
+      let emojicounter = client.msgs['counter'].rolfEmoji;
+      client.msgs ['counter'] = {
+        rolfEmoji: emojicounter + 1
+      }
+      fs.writeFile ('./emojis.json', JSON.stringify (client.msgs, null, 4, err => {
+        if (err) throw err;
+        message.channel.send ('emojit counted');
+      });
+
+    }
+
 });
 
 //Listener Event: Bot started
