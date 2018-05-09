@@ -158,7 +158,7 @@ bot.on('message', message => {
       client.msgs ['counter'] = {
         rolfEmoji: emojicounter + 1
       }
-      fs.writeFile ('./emojis.json', JSON.stringify (client.msgs, null, 4, err => {
+      fs.writeFile ('./emojis.json', JSON.stringify (client.msgs, null, 4) err => {
         if (err) throw err;
         message.channel.send ('emojit counted');
       });
