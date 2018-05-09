@@ -158,7 +158,7 @@ bot.on('message', message => {
 bot.on('ready', () => {
   console.log('Bot online.')
 
-  bot.user.setActivity('&help')
+  bot.user.setActivity('with his 15" congo dick')
 
 })
 
