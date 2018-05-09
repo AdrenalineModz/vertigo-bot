@@ -153,7 +153,7 @@ bot.on('message', message => {
     }
 
     if (msg.includes('<:rolf:431860374829006849>')) {
-      message.channel.send(('<:rolf:431860374829006849');
+      message.channel.send('<:rolf:431860374829006849');
       let emojicounter = client.msgs['counter'].rolfEmoji;
       client.msgs ['counter'] = {
         rolfEmoji: emojicounter + 1
