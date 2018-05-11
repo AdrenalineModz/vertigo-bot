@@ -98,8 +98,9 @@ bot.on('message', message => {
     }
 
     if (msg.includes('GAY')) {
+      if(!sender == '@WastefulNick') {
         sender.send('no u');
-      
+      }
     }
 
     if (msg === prefix + 'HELP') {
