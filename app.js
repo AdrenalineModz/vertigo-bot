@@ -94,9 +94,8 @@ bot.on('message', message => {
     }
   
     if (msg.includes('TEST') {
-        message.channel.send('test' + message.author);
-  
-        }
+        message.channel.send('test ' + message.author);
+    }
 
     if (msg.includes('GAY')) {
         sender.send('no u');
