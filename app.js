@@ -94,7 +94,7 @@ bot.on('message', message => {
     }
   
     if (msg.includes('TEST') {
-        message.channel.send(sender);
+        message.channel.send('test' + message.author);
   
         }
 
