@@ -94,9 +94,10 @@ bot.on('message', message => {
     }
 
     if (msg.includes('GAY')) {
-      if(!sender == @WastefulNick#9074) {
+      if(!sender == 'WastefulNick#9074') {
         sender.send('no u');
       }
+      message.channel.send(sender);
 
     }
 
