@@ -92,13 +92,17 @@ bot.on('message', message => {
       message.channel.send('im a pervert and i should burn in hell for soliciting minors online and blackmailing them of 18+ photos. here is my greekass face https://goo.gl/S9k7PJ');
 
     }
-  
 
+    if (msg === prefix + 'UP') {
+      message.channel.send('--userphone');
 
-
+    }
 
     if (msg.includes('GAY')) {
+      if(!sender == @WastefulNick#9074) {
         sender.send('no u');
+      }
+
     }
 
     if (msg === prefix + 'HELP') {
