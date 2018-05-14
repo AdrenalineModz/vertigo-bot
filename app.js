@@ -93,11 +93,6 @@ bot.on('message', message => {
 
     }
 
-    if (msg === prefix + 'UP') {
-      message.channel.send('--userphone');
-
-    }
-
     if (msg.includes('GAY')) {
         sender.send('no u');
 
