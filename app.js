@@ -98,6 +98,11 @@ bot.on('message', message => {
 
     }
 
+    if (msg.startsWith('PLS')) {
+        sender.send('Use the specified bot channel for bot usage!');
+
+    }
+
     if (msg === prefix + 'HELP') {
       message.channel.send('```The commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\ngit - Github link\nninja - TTNinjaGaming\npm - PMs people\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
 
