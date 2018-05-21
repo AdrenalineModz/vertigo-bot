@@ -99,7 +99,7 @@ bot.on('message', message => {
     }
 
     if (msg.startsWith('PLS')) {
-        sender.send('Use the specified bot channel for bot usage!');
+        message.channel.send('Use the specified bot channel for bot usage!');
 
     }
 
