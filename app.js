@@ -106,7 +106,7 @@ bot.on('message', message => {
     }
 
     if (msg.startsWith('TESTING')) {
-      message.channel.send(client.channels.get);
+      message.channel.send(message.guild.channels.find);
 
     }
 
