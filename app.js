@@ -106,7 +106,7 @@ bot.on('message', message => {
     }
 
     if (msg.startsWith('TESTING')) {
-      message.channel.send(message.channel);
+      message.channel.send(client.channels.get);
 
     }
 
