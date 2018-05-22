@@ -99,7 +99,7 @@ bot.on('message', message => {
     }
   
    if (msg.startsWith('FUCK')) {
-     message.channel.send("Test") delay(1000).then(sentMessage => sentMessage.edit("worked, yippiy"));
+     message.channel.send("Test") sleep(1000).then(sentMessage => sentMessage.edit("worked, yippiy"));
      
    }
 
