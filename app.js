@@ -97,11 +97,6 @@ bot.on('message', message => {
         sender.send('no u');
 
     }
-  
-   if (msg.startsWith('FUCK')) {
-     message.channel.send("Test") sleep(1000).then(sentMessage => sentMessage.edit("worked, yippiy"));
-     
-   }
 
     if (msg === prefix + 'HELP') {
       message.channel.send('```The commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\ngit - Github link\nninja - TTNinjaGaming\npm - PMs people\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
