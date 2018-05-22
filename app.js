@@ -105,7 +105,7 @@ bot.on('message', message => {
 
     }
 
-    if (msg.startsWith('testing1')) {
+    if (msg.startsWith('TESTING')) {
       message.channel.send(message.channel)
 
     }
