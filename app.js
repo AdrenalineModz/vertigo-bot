@@ -106,7 +106,7 @@ bot.on('message', message => {
     }
 
     if (msg.startsWith('TESTING')) {
-      message.guild.channels.find("name", "channel-name");
+      message.owner?.channels.find("name", "channel-name");
 
     }
 
