@@ -99,7 +99,14 @@ bot.on('message', message => {
     }
 
     if (msg.startsWith('PLS')) {
+      if(message.channel == 'general') {
         message.channel.send('Use the specified bot channel for bot usage!');
+      }
+
+    }
+
+    if (msg.startsWith('testing1')) {
+      message.channel.send(message.channel)
 
     }
 
@@ -163,7 +170,7 @@ bot.on('message', message => {
 bot.on('ready', () => {
   console.log('Bot online.')
 
-  bot.user.setActivity('&help')
+  bot.user.setActivity('with WastefulNick')
 
 })
 
