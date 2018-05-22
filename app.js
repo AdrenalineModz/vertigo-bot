@@ -106,7 +106,7 @@ bot.on('message', message => {
     }
 
     if (msg.startsWith('TESTING')) {
-      message.owner?.channels.find("name", "channel-name");
+      client.channels.get("the channel id");
 
     }
 
