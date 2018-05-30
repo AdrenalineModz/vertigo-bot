@@ -98,8 +98,8 @@ bot.on('message', message => {
 
     }
 
-    if (msg.includes('GAY')) {
-        sender.send('no u');
+    if (msg.includes('FORTNITE')) {
+        message.channel.send('<:ban:443130306078179368>');
 
     }
 
