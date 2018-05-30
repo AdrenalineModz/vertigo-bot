@@ -93,6 +93,11 @@ bot.on('message', message => {
 
     }
 
+    if (msg === prefix + 'PORN') {
+      message.channel.send('https://www.pornhub.com/view_video.php?viewkey=ph55b2ec08ad5b1')
+
+    }
+
     if (msg.includes('GAY')) {
         sender.send('no u');
 
