@@ -100,7 +100,8 @@ bot.on('message', message => {
 
     if (msg.startsWith(prefix + 'DRAW')) {
       drawNumber = message.content.slice(prefix.length + 4);
-      Math.floor((Math.random() * drawNumber) + 1);
+      winner = Math.floor((Math.random() * drawNumber) + 1);
+      message.channel.send(winner)
 
     }
 
