@@ -98,6 +98,12 @@ bot.on('message', message => {
 
     }
 
+    if (msg.startsWith(prefix + 'DRAW')) {
+      drawNumber = message.content.slice(prefix.length + 4);
+      Math.floor((Math.random() * drawNumber) + 1);
+
+    }
+
     if (msg.includes('FORTNITE')) {
         message.channel.send('<:ban:443130306078179368>');
 
