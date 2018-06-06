@@ -95,7 +95,7 @@ bot.on('message', message => {
 
     if (msg === prefix + 'GIVEAWAY') {
       let gaRole = message.guild.roles.find('name', 'giveaway');
-      sender.addRole(role).catch(console.error);
+      sender.addRole(gaRole).catch(console.error);
 
     }
 
