@@ -54,6 +54,10 @@ function hook(channel, title, message, color, avatar) {
     })
 
 }
+client.on("guildMemberAdd", (member) => {
+  console.log(`New User "${member.user.username}" has joined "${member.guild.name}"` );
+  member.guild.channels.get("welcome-new-people").send(`"${member.user.username}", welcome to **Motel Vertigo**! Remember to read the rules!`);
+});
 
 //Listener Event: Message recieved
 bot.on('message', message => {
