@@ -55,10 +55,6 @@ function hook(channel, title, message, color, avatar) {
 
 }
 
-bot.on("guildMemberAdd", (member) => {
-  bot.channels.get(443037949639131136).sendMessage(`"${member.user.username}" has joined this server`);
-});
-
 //Listener Event: Message recieved
 bot.on('message', message => {
     let msg = message.content.toUpperCase();
