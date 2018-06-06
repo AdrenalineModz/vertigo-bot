@@ -91,7 +91,7 @@ bot.on('message', message => {
     if (msg.startsWith(prefix + 'GIVEAWAY')) {
       if(!message.member.roles.has("453883564417744907")) return message.channel.send("Command only for bot developers");
       coins = message.content.slice(prefix.length + 8);
-      message.channel.send('plokdf**GIVEAWAY**\n\nI\'ll be drawing one winner to receive' + coins + ' Dank Memer coins! To participate in this giveaway all you have to do is be the Member rank or above and react to this message with :tada:!\n\n<@&410153995194073092>\n\nGood luck!')
+      message.channel.send('**GIVEAWAY**\n\nI\'ll be drawing one winner to receive' + coins + ' Dank Memer coins! To participate in this giveaway all you have to do is be the Member rank or above and react to this message with :tada:!\n\n<@&410153995194073092>\n\nGood luck!')
 
     }
 
