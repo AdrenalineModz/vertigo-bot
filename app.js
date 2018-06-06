@@ -93,7 +93,7 @@ bot.on('message', message => {
       coins = message.content.slice(prefix.length + 8);
       message.channel.send('**GIVEAWAY**\n\nI\'ll be drawing one winner to receive' + coins + ' Dank Memer coins! To participate in this giveaway all you have to do is be the Member rank or above and react to this message with :tada:!\n\n<@&410153995194073092>\n\nGood luck!').then(sentMessage => {
     sentMessage.react('🎉');
-
+  }
     }
 
     if (msg === prefix + 'NINJA') {
