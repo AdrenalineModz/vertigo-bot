@@ -99,7 +99,7 @@ bot.on('message', message => {
     }
 
     if (msg.startsWith(prefix + 'DRAW')) {
-      if (!message.member.hasPermission("BOTDEV")) return message.channel.send("Command only for bot developers");
+      if (!message.member.hasPermission("BOT_DEV")) return message.channel.send("Command only for bot developers");
       drawNumber = message.content.slice(prefix.length + 4);
       winner = Math.floor((Math.random() * drawNumber) + 1);
       message.channel.send(winner)
