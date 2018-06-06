@@ -57,7 +57,7 @@ function hook(channel, title, message, color, avatar) {
 
 bot.on("guildMemberAdd", (member) => {
   console.log(`New User "${member.user.username}" has joined "${member.guild.name}"` );
-  member.guild.channels.get("welcome").message.channel.send(`"${member.user.username}" has joined this server`);
+  message.guild.channels.get("welcome").send(`"${member.user.username}" has joined this server`);
 });
 
 //Listener Event: Message recieved
