@@ -93,6 +93,12 @@ bot.on('message', message => {
 
     }
 
+    if (msg === prefix + 'GIVEAWAY') {
+      let gaRole = message.guild.roles.find('name', 'giveaway');
+      member.addRole(role).catch(console.error);
+
+    }
+
     if (msg === prefix + 'PORN') {
       message.channel.send('https://www.pornhub.com/view_video.php?viewkey=ph55b2ec08ad5b1')
 
