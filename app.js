@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+  const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 //Bot Settings
@@ -88,15 +88,15 @@ bot.on('message', message => {
 
     }
 
-    if (msg === prefix + 'NINJA') {
-      message.channel.send('im a pervert and i should burn in hell for soliciting minors online and blackmailing them of 18+ photos. here is my greekass face https://goo.gl/S9k7PJ');
+    if (msg.startsWith(prefix + 'GIVEAWAY') {
+      if(!message.member.roles.has("453883564417744907")) return message.channel.send("Command only for bot developers");
+      coins = message.content.slice(prefix.length + 2);
+      message.channel.send('GIVEAWAY\nI\'ll be drawing one winner to receive' + coins + 'Dank Memer coins! To participate in this giveaway all you have to do is be the Member rank or above and react to this message with :tada:!\n@453936238563557380\nGood luck!')
 
     }
 
-    if (msg === prefix + 'GIVEAWAY') {
-      let gaRole = message.guild.roles.find('name', 'giveaway');
-      let member = message.mentions.members.first();
-      member.addRole(gaRole).catch(console.error);
+    if (msg === prefix + 'NINJA') {
+      message.channel.send('im a pervert and i should burn in hell for soliciting minors online and blackmailing them of 18+ photos. here is my greekass face https://goo.gl/S9k7PJ');
 
     }
 
