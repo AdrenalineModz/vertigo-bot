@@ -75,7 +75,7 @@ bot.on('message', message => {
 
     if (msg === prefix + 'CONGO') {
       message.channel.send('THE OFFICIAL SQUAD WEBSITE MADE BY WASTEFULNICK: http://congohub.cf');
-      message.react('<:congo:410469779648806922>')
+      message.react('<410469779648806922>')
 
     }
 
@@ -111,22 +111,22 @@ bot.on('message', message => {
     }
 
     if (msg.includes('FORTNITE')) {
-        message.react('<:ban:443130306078179368>');
+        message.react('<443130306078179368>');
 
     }
 
     if (msg.includes('LOL')) {
-        message.react('<:rolf:431860374829006849>');
+        message.react('<431860374829006849>');
 
     }
 
     if (msg.includes('LMAO')) {
-        message.react('<:rolf:431860374829006849>');
+        message.react('<431860374829006849>');
 
     }
 
     if (msg.includes('LMFAO')) {
-        message.react('<:rolf:431860374829006849>');
+        message.react('<431860374829006849>');
 
     }
 
