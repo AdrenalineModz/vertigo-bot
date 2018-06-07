@@ -73,13 +73,9 @@ bot.on('message', message => {
 
     }
 
-    if (msg === prefix + 'BOT') {
-      message.channel.send('Using extensive bot commands in general will result in a temporary ban! Use \`#bots\`');
-
-    }
-
     if (msg === prefix + 'CONGO') {
       message.channel.send('THE OFFICIAL SQUAD WEBSITE MADE BY WASTEFULNICK: http://congohub.cf');
+      message.react('<:congo:410469779648806922>')
 
     }
 
@@ -115,12 +111,27 @@ bot.on('message', message => {
     }
 
     if (msg.includes('FORTNITE')) {
-        message.channel.send('<:ban:443130306078179368>');
+        message.react('<:ban:443130306078179368>');
+
+    }
+
+    if (msg.includes('LOL')) {
+        message.react('<:rolf:431860374829006849>');
+
+    }
+
+    if (msg.includes('LMAO')) {
+        message.react('<:rolf:431860374829006849>');
+
+    }
+
+    if (msg.includes('LMFAO')) {
+        message.react('<:rolf:431860374829006849>');
 
     }
 
     if (msg === prefix + 'HELP') {
-      message.channel.send('```The commands are:\nhelp - This list\ninvite - Invite link\nbot - Stop bot spam\ndog - oUR dog\ncongo - Best website EVER\nporn - 😏\ngit - Github link\nninja - TTNinjaGaming\npm - PMs people\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
+      message.channel.send('```The commands are:\nhelp - This list\ngiveaway - Create a giveaway\ndraw - Draw a winner\ninvite - Invite link\ndog - oUR dog\ncongo - Best website EVER\nporn - 😏\ngit - Github link\nninja - TTNinjaGaming\npm - PMs people\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
 
     }
 
