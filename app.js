@@ -87,8 +87,8 @@ bot.on('message', message => {
     if (msg.startsWith(prefix + 'GIVEAWAY')) {
       if(!message.member.roles.has("453883564417744907")) return message.channel.send("Command only for giveaway creators");
       prize = message.content.slice(prefix.length + 8);
-      message.channel.send('**GIVEAWAY**\n\nI\'ll be drawing one winner to receive' + prize + ' ! To participate in this giveaway all you have to do is be the Member rank or above and react to this message with :tada:!\n\n<@&453970415455305739>\n\nGood luck!').then(sentMessage => {
-    sentMessage.react('🎉');
+      message.channel.send('**GIVEAWAY**\n\nI\'ll be drawing one winner to receive' + prize + ' ! To participate in this giveaway all you have to do is be the Member rank or above and react to this message with :tada:!\n\n\n\nGood luck!').then(sentMessage => {
+    sentMessage.react('454345135539486720');
   })
     }
 
@@ -132,7 +132,6 @@ bot.on('message', message => {
 
     if (msg === prefix + 'HELP') {
       message.channel.send('```The commands are:\nhelp - This list\ngiveaway - Create a giveaway\ndraw - Draw a winner\ninvite - Invite link\ndog - oUR dog\ncongo - Best website EVER\nporn - 😏\ngit - Github link\nninja - TTNinjaGaming\npm - PMs people\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
-      message.react('429416318815698944');
 
     }
 
@@ -141,7 +140,8 @@ bot.on('message', message => {
       message.delete();
       mentionMessage = message.content.slice(prefix.length + 2);
       mention.send (mentionMessage + '\n\nSent by: ' + sender);
-      message.channel.send('Message sent by ' + sender + ' and was sent to ' + mention);
+      message.channel.send('Message sent by ' + sender + ' and was sent to ' + mention).then(sentMessage => {
+    sentMessage.react('📬');
 
     }
 
