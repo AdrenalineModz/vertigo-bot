@@ -63,7 +63,7 @@ bot.on('message', message => {
     let args = cont.slice(1);
     var mention = message.mentions.users.first();
 
-    if (msg === prefix + 'OUR DOG') {
+    if (msg.includes('DOG')) {
       message.react('438006163955515392');
 
     }
