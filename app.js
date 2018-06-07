@@ -143,7 +143,8 @@ bot.on('message', message => {
       message.channel.send('Message sent by ' + sender + ' and was sent to ' + mention).then(sentMessage => {
     sentMessage.react('📬');
 
-    }
+  })
+    } 
 
 
     if (msg.startsWith(prefix + 'PURGE')) {
