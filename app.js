@@ -87,7 +87,7 @@ bot.on('message', message => {
     if (msg.startsWith(prefix + 'GIVEAWAY')) {
       if(!message.member.roles.has("453883564417744907")) return message.channel.send("Command only for giveaway creators");
       prize = message.content.slice(prefix.length + 8);
-      message.channel.send('**GIVEAWAY**\n\nI\'ll be drawing one winner to receive' + prize + ' ! To participate in this giveaway all you have to do is be the Member rank or above and react to this message with :tada:!\n\n\n\nGood luck!').then(sentMessage => {
+      message.channel.send('**GIVEAWAY**\n\nI\'ll be drawing one winner to receive' + prize + '! To participate in this giveaway all you have to do is be the Member rank or above and react to this message with :hypertada:!\n\n\n\nGood luck!').then(sentMessage => {
     sentMessage.react('454345135539486720');
   })
     }
@@ -144,7 +144,7 @@ bot.on('message', message => {
     sentMessage.react('📬');
 
   })
-    } 
+    }
 
 
     if (msg.startsWith(prefix + 'PURGE')) {
