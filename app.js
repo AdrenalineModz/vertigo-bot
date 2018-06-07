@@ -63,8 +63,8 @@ bot.on('message', message => {
     let args = cont.slice(1);
     var mention = message.mentions.users.first();
 
-    if (msg === prefix + 'DOG') {
-      message.channel.send('oUR dog <:angery:438006163955515392>');
+    if (msg === prefix + 'OUR DOG') {
+      message.react('438006163955515392');
 
     }
 
@@ -75,7 +75,7 @@ bot.on('message', message => {
 
     if (msg === prefix + 'CONGO') {
       message.channel.send('THE OFFICIAL SQUAD WEBSITE MADE BY WASTEFULNICK: http://congohub.cf');
-      message.react('<:congo:410469779648806922>')
+      message.react('410469779648806922')
 
     }
 
@@ -116,22 +116,23 @@ bot.on('message', message => {
     }
 
     if (msg.includes('LOL')) {
-        message.react('<:rolf:431860374829006849>');
+        message.react('431860374829006849');
 
     }
 
     if (msg.includes('LMAO')) {
-        message.react('<:rolf:431860374829006849>');
+        message.react('431860374829006849');
 
     }
 
     if (msg.includes('LMFAO')) {
-        message.react('<:rolf:431860374829006849>');
+        message.react('431860374829006849');
 
     }
 
     if (msg === prefix + 'HELP') {
       message.channel.send('```The commands are:\nhelp - This list\ngiveaway - Create a giveaway\ndraw - Draw a winner\ninvite - Invite link\ndog - oUR dog\ncongo - Best website EVER\nporn - 😏\ngit - Github link\nninja - TTNinjaGaming\npm - PMs people\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
+      message.react('429416318815698944');
 
     }
 
