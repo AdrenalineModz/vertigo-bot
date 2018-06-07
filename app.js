@@ -111,7 +111,7 @@ bot.on('message', message => {
     }
 
     if (msg.includes('FORTNITE')) {
-        message.react('<:ban:>');
+        message.react(':ban:');
 
     }
 
