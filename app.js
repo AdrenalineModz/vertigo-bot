@@ -111,7 +111,7 @@ bot.on('message', message => {
     }
 
     if (msg.includes('FORTNITE')) {
-        message.react('<443130306078179368>');
+        message.react('443130306078179368');
 
     }
 
