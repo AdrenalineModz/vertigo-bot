@@ -140,7 +140,7 @@ bot.on('message', message => {
       message.delete();
       mentionMessage = message.content.slice(prefix.length + 2);
       mention.send (mentionMessage + '\n\nSent by: ' + sender);
-      message.channel.send('Message sent by ' + sender + ' and was sent to ' + mention).then(sentMessage => {
+      message.channel.send('Message sent').then(sentMessage => {
     sentMessage.react('📬');
 
   })
