@@ -99,6 +99,7 @@ bot.on('message', message => {
 
     if(msg.channel === '454020003885219840'){
       sender.addRole(454310213768708096)
+      message.delete()
     }
 
     if (msg === prefix + 'PORN') {
