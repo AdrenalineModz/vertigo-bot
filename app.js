@@ -76,6 +76,7 @@ bot.on('message', message => {
     if (msg === prefix + 'CONGO') {
       message.channel.send('THE OFFICIAL WEBSITE GOT SEIZED BY THE FBI: http://congohub.cf').then(sentMessage => {
     sentMessage.react('410469779648806922');
+  })
       message.react('410469779648806922')
 
     }
