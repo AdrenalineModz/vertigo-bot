@@ -1,4 +1,4 @@
-  const Discord = require('discord.js');
+const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 //Bot Settings
@@ -95,6 +95,10 @@ bot.on('message', message => {
     if (msg === prefix + 'NINJA') {
       message.channel.send('im a pervert and i should burn in hell for soliciting minors online and blackmailing them of 18+ photos. here is my greekass face https://goo.gl/S9k7PJ');
 
+    }
+
+    if(msg.channel === '454020003885219840'){
+      sender.addRole(454310213768708096)
     }
 
     if (msg === prefix + 'PORN') {
