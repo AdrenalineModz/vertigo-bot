@@ -98,7 +98,7 @@ bot.on('message', message => {
     }
 
     if(message.channel.id === '454020003885219840'){
-      message.member.addRole(454310213768708096);
+      message.member.addRole('453970415455305739>');
       message.delete();
     }
 
