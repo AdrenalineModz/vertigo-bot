@@ -149,10 +149,10 @@ bot.on('message', message => {
       icon_url: bot.user.avatarURL
     },
     title: "Command list",
-    description: "This is a list of all commands (does not include non-specific commands e.g. \'lmao\')",
+    description: "This is a list of most commands)",
     fields: [{
         name: "Fun",
-        value: "dog - oUR dog\n[congo] (http://congohub.cf) - Best website EVER (that got taken down)\nporn - 😏\nninja - TTNinjaGaming\nPM - PM's people\nhook - Webhook commands\n[git] (https://github.com/WastefulNick/vertigo-bot) - Github for this bot"
+        value: "dog - oUR dog\n[congo](http://congohub.cf) - Best website EVER (that got taken down)\nporn - 😏\nninja - TTNinjaGaming\nPM - PM's people\nhook - Webhook commands\n[git](https://github.com/WastefulNick/vertigo-bot) - Github for this bot"
       },
       {
         name: "Other",
