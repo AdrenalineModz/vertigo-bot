@@ -86,7 +86,7 @@ bot.on('message', message => {
 
     }
 
-    if (msg.author.id === '159985870458322944') {
+    if (sender.id === '159985870458322944') {
       message.channel.send('I\'m better than you <@!159985870458322944>')
     }
 
