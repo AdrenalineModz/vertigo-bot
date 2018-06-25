@@ -103,6 +103,7 @@ bot.on('message', message => {
       message.member.addRole('453970415455305739');
       message.delete();
       console.log(message.author.username + ' received giveaway rank');
+      message.author.send('You\'ve now signed up to be pinged for giveaways, remember to go to `#giveaways` and react to the emoji for a chance to win! Good luck!');
     }
 
     if (msg === prefix + 'PORN') {
