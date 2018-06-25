@@ -100,7 +100,7 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'MEMBERS') {
-      message.channel.send(Member.Count);
+      message.channel.send(member.Count);
 
     }
 
