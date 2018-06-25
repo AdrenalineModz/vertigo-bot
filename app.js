@@ -108,7 +108,10 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'PORN') {
-      message.channel.send('https://www.pornhub.com/view_video.php?viewkey=ph55b2ec08ad5b1')
+      message.channel.send({embed: {
+        color: 3447003,
+        description: "[Click here (SFW)](https://www.pornhub.com/view_video.php?viewkey=ph55b2ec08ad5b1)"
+      }});
 
     }
 
