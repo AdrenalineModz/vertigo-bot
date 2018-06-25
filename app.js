@@ -86,6 +86,10 @@ bot.on('message', message => {
 
     }
 
+    if (msg.author.id === '159985870458322944') {
+      message.channel.send('I\'m better than you <@!159985870458322944>')
+    }
+
     if (msg.startsWith(prefix + 'GIVEAWAY')) {
       if(!message.member.roles.has('453883564417744907')) return message.channel.send("Command only for giveaway creators");
       prize = message.content.slice(prefix.length + 8);
