@@ -140,10 +140,6 @@ bot.on('message', message => {
 
     }
 
-    if (msg === prefix + 'HELP') {
-      message.channel.send('```The commands are:\nhelp - This list\ngiveaway - Create a giveaway\ndraw - Draw a winner\ninvite - Invite link\ndog - oUR dog\ncongo - Best website EVER\nporn - 😏\ngit - Github link\nninja - TTNinjaGaming\npm - PMs people\npurge - Deletes messages\nhook - Webhook commands\n\nThe prefix is: &```');
-
-    }
 
     if (msg === prefix + 'HELP') {
       message.channel.send({embed: {
@@ -156,13 +152,7 @@ bot.on('message', message => {
     description: "This is a list of all commands (does not include non-specific commands e.g. \'lmao\')",
     fields: [{
         name: "Fun",
-        value: "dog - oUR dog"
-        value: "[congo] (http://congohub.cf) - Best website EVER (that got taken down)"
-        value: "porn - 😏"
-        value: "ninja - TTNinjaGaming"
-        value: "PM - PM's people"
-        value: "hook - Webhook commands"
-        value: "[git] (https://github.com/WastefulNick/vertigo-bot) - Github for this bot"
+        value: "dog - oUR dog\n[congo] (http://congohub.cf) - Best website EVER (that got taken down)\nporn - 😏\nninja - TTNinjaGaming\nPM - PM's people\nhook - Webhook commands\n[git] (https://github.com/WastefulNick/vertigo-bot) - Github for this bot"
       },
       {
         name: "Other",
@@ -174,8 +164,7 @@ bot.on('message', message => {
       },
       {
         name: "Giveaway",
-        value: "giveaway - Creats giveaway"
-        value: "draw - Draws giveaway"
+        value: "giveaway - Creats giveaway\ndraw - Draws giveaway"
       }
     ],
     timestamp: new Date(),
