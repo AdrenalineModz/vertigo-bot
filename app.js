@@ -102,7 +102,7 @@ bot.on('message', message => {
     if(message.channel.id === '454020003885219840'){
       message.member.addRole('453970415455305739');
       message.delete();
-      console.log(sender + ' received giveaway rank');
+      console.log(message.member + ' received giveaway rank');
     }
 
     if (msg === prefix + 'PORN') {
