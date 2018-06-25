@@ -145,6 +145,49 @@ bot.on('message', message => {
 
     }
 
+    if (msg === prefix + 'HELP') {
+      message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "Command list",
+    description: "This is a list of all commands (does not include non-specific commands e.g. \'lmao\')",
+    fields: [{
+        name: "Fun",
+        value: "dog - oUR dog"
+        value: "[congo] (http://congohub.cf) - Best website EVER (that got taken down)"
+        value: "porn - 😏"
+        value: "ninja - TTNinjaGaming"
+        value: "PM - PM's people"
+        value: "hook - Webhook commands"
+        value: "[git] (https://github.com/WastefulNick/vertigo-bot) - Github for this bot"
+      },
+      {
+        name: "Other",
+        value: "invite - Posts invite link"
+      },
+      {
+        name: "Admin",
+        value: "purge - Deletes messages"
+      },
+      {
+        name: "Giveaway",
+        value: "giveaway - Creats giveaway"
+        value: "draw - Draws giveaway"
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© WastefulNick"
+    }
+  }
+});
+
+    }
+
     if (msg.startsWith(prefix + 'PM')) {
       if (mention == null) { message.channel.send('You have to mention someone!'); return;}
       message.delete();
