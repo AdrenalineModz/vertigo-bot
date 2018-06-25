@@ -219,7 +219,7 @@ bot.on('message', message => {
       message.delete();
 
       if (msg === prefix + 'HOOK') {
-        return hook(message.channel, 'Hook Usage', `${prefix}hook <title>, <message>, [HEXcolor], [avatarURL]\n\n**<> is required\n[] is optional**`, 'FC8469', 'https://cdn.discordapp.com/avatars/440182773316190208/2bc1948291e0481af3e553a1bb3afabe.png')
+        return hook(message.channel, 'Hook Usage', `${prefix}hook <username>, <message>, [HEXcolor], [avatarURL]\n\n**<> is required\n[] is optional**`, 'FC8469', 'https://cdn.discordapp.com/avatars/440182773316190208/2bc1948291e0481af3e553a1bb3afabe.png')
 
       }
       let hookArgs = message.content.slice(prefix.length + 4).split(",")
