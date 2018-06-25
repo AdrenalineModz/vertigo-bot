@@ -100,9 +100,9 @@ bot.on('message', message => {
     }
 
     if(message.channel.id === '454020003885219840'){
+      message.delete();
       if(!message.member.roles.has('410153995194073092')) return message.member.send('You need a Member rank to do this');
       message.member.addRole('453970415455305739');
-      message.delete();
       console.log(message.author.username + ' received giveaway rank');
       message.author.send('You\'ve now signed up to be pinged for giveaways, remember to go to `#giveaways` and react to the emoji for a chance to win! Good luck!');
     }
