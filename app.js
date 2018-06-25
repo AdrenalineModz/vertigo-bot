@@ -145,8 +145,8 @@ bot.on('message', message => {
       message.channel.send({embed: {
     color: 3447003,
     author: {
-      name: client.user.username,
-      icon_url: client.user.avatarURL
+      name: bot.user.username,
+      icon_url: bot.user.avatarURL
     },
     title: "Command list",
     description: "This is a list of all commands (does not include non-specific commands e.g. \'lmao\')",
@@ -169,7 +169,7 @@ bot.on('message', message => {
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: client.user.avatarURL,
+      icon_url: bot.user.avatarURL,
       text: "© WastefulNick"
     }
   }
