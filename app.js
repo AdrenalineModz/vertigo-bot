@@ -99,11 +99,6 @@ bot.on('message', message => {
 
     }
 
-    if (msg === prefix + 'MEMBERS') {
-      message.channel.send(member.Count);
-
-    }
-
     if(message.channel.id === '454020003885219840'){
       message.delete();
       if(!message.member.roles.has('410153995194073092')) return message.member.send('You need a Member rank to do this');
