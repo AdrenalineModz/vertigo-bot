@@ -115,6 +115,12 @@ bot.on('message', message => {
 
     }
 
+    if (msg.includes('MERCH')) {
+      color: 3447003,
+      description: "[Click here for merch!](https://goo.gl/J2D75Z)"
+    }});
+    }
+
     if (msg.startsWith(prefix + 'DRAW')) {
       if(!message.member.roles.has("453883564417744907")) return message.channel.send("Command only for bot developers");
       drawNumber = message.content.slice(prefix.length + 4);
