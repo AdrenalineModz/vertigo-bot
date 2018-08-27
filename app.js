@@ -17,10 +17,10 @@ function hook(channel, title, message, color, avatar) {
 
   channel.fetchWebhooks()
     .then(webhook => {
-      let foundHook = webhook.find('name', 'Vertigo');
+      let foundHook = webhook.find('name', 'Slav Bot');
 
       if (!foundHook) {
-        channel.createWebhook('Vertigo', 'https://cdn.discordapp.com/avatars/440182773316190208/2bc1948291e0481af3e553a1bb3afabe.png')
+        channel.createWebhook('Slav Bot', 'https://cdn.discordapp.com/avatars/440182773316190208/2bc1948291e0481af3e553a1bb3afabe.png')
           .then(webhook => {
             webHook.send('', {
               "username": title,
@@ -69,15 +69,12 @@ bot.on('message', message => {
     }
 
     if (msg === prefix + 'INVITE') {
-      message.channel.send('Invite friends with this link: http://discord.gg/KMXPaw7');
+      message.channel.send('Invite friends with this link: https://discord.gg/qwcvh7v');
 
     }
 
     if (msg === prefix + 'CONGO') {
-      message.channel.send('THE OFFICIAL WEBSITE GOT SEIZED BY THE FBI: http://congohub.cf').then(sentMessage => {
-    sentMessage.react('410469779648806922');
-  })
-      message.react('410469779648806922')
+      message.channel.send('THE OFFICIAL WEBSITE GOT SEIZED BY THE FBI: http://congohub.cf')
 
     }
 
